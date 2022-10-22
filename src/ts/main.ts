@@ -113,7 +113,7 @@ function setCardType(type: string) {
     default: ['black', 'gray']
   }
 
-  ccLogoType.setAttribute('src', `./src/assets/cc-${type}.svg`);
+  ccLogoType.setAttribute('src', `/cc-${type}.svg`);
   darkerFillColor.setAttribute('fill', colors[type as keyof typeof colors][0]);
   lighterFillColor.setAttribute('fill', colors[type as keyof typeof colors][1]);
 }
